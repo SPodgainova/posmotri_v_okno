@@ -36,3 +36,19 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  margin:auto;
+  display: grid;
+  grid-template-columns: 711px 1fr;
+  align-items: end;
+  column-gap: 30px;
+}
+.search-form {
+  display: flex;
+  gap: 40px;
+}
+
+.content__details {
+  overflow: hidden;
+}
