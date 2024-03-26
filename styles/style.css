@@ -110,9 +110,9 @@ ol {
   color: #fff;
 }
 
-.content__video-card{
+.content__video-card {
   display: grid;
-  grid-template-columns:200px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-rows: min-content auto;
     
 }
@@ -124,11 +124,18 @@ ol {
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
+  margin-bottom: 6px;
 }
 
 .content__video-card-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 90%;
-  
+  }
+
+.content__video-card-thumbnail {
+  inline-size: 194px;
+  block-size: 103px;
+  justify-self: end;
+
 }
