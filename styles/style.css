@@ -54,6 +54,7 @@ ol {
   grid-template-columns: 711px 1fr;
   align-items: end;
   column-gap: 30px;
+  padding: 133px 30px;
 }
 
 .result__video-container {
@@ -112,10 +113,10 @@ ol {
 }
 
 .content__video-card {
-  display: grid;
-  grid-template-columns: 1fr 194px;
-  grid-auto-rows: min-content auto;
-    
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
 }
 
 .content__video-card-title {
@@ -137,6 +138,5 @@ ol {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
-  justify-self: end;
-
+  
 }
