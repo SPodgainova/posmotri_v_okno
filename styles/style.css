@@ -37,7 +37,7 @@ ol {
   list-style: none;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -46,7 +46,7 @@ ol {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 .content {
   margin: auto;
@@ -154,7 +154,7 @@ ol {
 }
 
 .button {
-  font-family: inherit;
+  font-family: "Fira Sans Condensed", sans-serif;
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
@@ -181,3 +181,14 @@ ol {
   min-inline-size: 100%;
   block-size: 34px;
 }
+
+input {
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  font-family: inherit; 
+  color: inherit;
+  
+}
+
