@@ -82,6 +82,10 @@ ol {
   margin-bottom: 5px;
 }
 
+.search-form__label-text {
+  vertical-align: baseline;
+}
+
 .title {
   margin-bottom: 26px;
   font-weight: 700;
@@ -190,19 +194,40 @@ ol {
   font-family: inherit; 
   color: inherit;
   width: 225px;
+  padding: 2.5px 0;
  }
  
  .search-form__textfield:focus {
-  outline-color: none;
+  outline: none;
  }
 
- .search-form__textfield:has(:focus-visible) {
+ .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
-   
- }
-
+  outline-offset: 1px;
+   }
 
  .search-form__checkbox-list {
   display: flex;
   gap: 15px;
+ }
+
+ .search-form__pseudo-checkbox {
+  display: inline-block;
+  position: relative;
+  inline-size: 19px;
+  block-size: 19px;
+  border: 1px solid #fff;
+  background-color: transparent;
+ }
+
+ .search-form__pseudo-checkbox:active::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  inline-size: 15px;
+  block-size: 15px;
+  right: 1px;
+  top: 1px;
+  border: 1px solid #fff;
+  background-color: #fff;
  }
