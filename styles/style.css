@@ -182,13 +182,27 @@ ol {
   block-size: 34px;
 }
 
-input {
+.search-form__textfield {
   background-color: transparent;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   font-family: inherit; 
   color: inherit;
-  
-}
+  width: 225px;
+ }
+ 
+ .search-form__textfield:focus {
+  outline-color: none;
+ }
 
+ .search-form__textfield:has(:focus-visible) {
+  outline: 1px solid #fff;
+   
+ }
+
+
+ .search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+ }
