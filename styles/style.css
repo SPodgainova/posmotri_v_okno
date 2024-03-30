@@ -41,13 +41,12 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .content {
@@ -61,8 +60,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  min-inline-size: 711px;
-  min-block-size: 386px;
+  width: 711px;
+  height: 386px;
   margin-bottom: 16px;
 }
 .result__video {
@@ -94,6 +93,7 @@ ol {
 }
 
 .search-form__textfield {
+  appearance: none;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: inherit;
   color: inherit;
@@ -103,7 +103,7 @@ ol {
   border-color: transparent;
   border-block-start: 1px solid currentColor;
   border-block-end: 1px solid currentColor;
-}
+  }
 
 .search-form__textfield:focus {
   outline: none;
