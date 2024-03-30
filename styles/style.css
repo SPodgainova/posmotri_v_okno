@@ -84,7 +84,9 @@ ol {
 
 .search-form__label {
   display: flex;
+  align-items: center;
   gap: 5px;
+  
 }
 
 .title {
@@ -214,12 +216,11 @@ ol {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  font-family: inherit;
+  font-family: inherit, sans-serif;
   color: inherit;
-  inline-size: 225px;
+  min-inline-size: 225px;
   block-size: 27px;
-  padding: 2.5px 0;
-}
+  }
 
 .search-form__textfield:focus {
   outline: none;
@@ -240,25 +241,25 @@ ol {
   display: flex;
   gap: 15px;
   margin-bottom: 5px;
+  align-items: center;
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 19px;
   block-size: 19px;
   border: 1px solid #fff;
   background-color: transparent;
+
 }
 
-.search-form__pseudo-checkbox:active::before {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   display: inline-block;
-  position: relative;
   inline-size: 15px;
   block-size: 15px;
-  right: 1px;
-  top: 1px;
   border: 1px solid #fff;
   background-color: #fff;
 }
